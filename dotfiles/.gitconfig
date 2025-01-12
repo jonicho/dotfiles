@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Jonas Keller
+	email = jonas.r.keller@gmail.com
+[merge]
+	conflictstyle = diff3
