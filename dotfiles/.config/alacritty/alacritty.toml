@@ -3,3 +3,4 @@ size = 10
 
 [window]
 startup_mode = "Maximized"
+resize_increments = true
