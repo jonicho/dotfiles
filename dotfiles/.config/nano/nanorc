@@ -249,7 +249,7 @@
 ## For all details, see 'man nanorc', section SYNTAX HIGHLIGHTING.
 
 ## To include most of the existing syntax definitions, you can do:
-# include /usr/share/nano/*.nanorc
+include /usr/share/nano/*.nanorc
 
 ## Or you can select just the ones you need.  For example:
 # include /usr/share/nano/html.nanorc
@@ -258,7 +258,7 @@
 
 ## In /usr/share/nano/extra/ you can find some syntaxes that are
 ## specific for certain distros or for some less common languages.
-
+include /usr/share/nano/extra/*.nanorc
 
 ## If <Tab> should always produce four spaces when editing a Python file,
 ## independent of the settings of 'tabsize' and 'tabstospaces':
