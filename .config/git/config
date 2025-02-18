@@ -5,3 +5,6 @@
 	email = jonas.r.keller@gmail.com
 [merge]
 	conflictstyle = diff3
+[diff]
+	algorithm = histogram
+	renames = copies
