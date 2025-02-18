@@ -3,3 +3,8 @@ size = 10
 
 [window]
 startup_mode = "Maximized"
+
+[general]
+import = [
+    "themes/enfocado_dark.toml",
+]
