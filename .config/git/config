@@ -11,6 +11,6 @@
 [core]
 	editor = nano
 [alias]
-	tree = log --graph --pretty=\"%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\" --all
+	tree = log --graph --pretty=\"%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset\" --all
 [push]
 	autoSetupRemote = true
