@@ -9,7 +9,7 @@
 	algorithm = histogram
 	renames = copies
 [core]
-	editor = nano
+	editor = vim
 [alias]
 	tree = log --graph --pretty=\"%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset\" --all
 [push]
