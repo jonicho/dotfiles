@@ -13,4 +13,4 @@ stow .
 ```
 
 > [!IMPORTANT]
-> Make sure to change the name and email in the [git config](.config/git/config) to your name and email if you aren't me.
+> Make sure to change the name and email in the [git config](.config/git/config) and [jj config](.config/jj/config.toml) to your name and email if you aren't me.
