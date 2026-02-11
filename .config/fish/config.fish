@@ -6,7 +6,7 @@ if status is-interactive
 end
 
 if type -q eza
-    alias ll='eza -aalF -icons'
+    alias ll='eza -aalF --icons=auto'
 else
     echo "eza not found, using ls instead"
     alias ll='LC_COLLATE=C ls -alF'
