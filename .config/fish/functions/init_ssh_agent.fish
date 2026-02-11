@@ -1,9 +1,12 @@
 function init_ssh_agent
     if test -d "$XDG_RUNTIME_DIR" -a -w "$XDG_RUNTIME_DIR"
         set SSH_AGENT_ENV_FILE "$XDG_RUNTIME_DIR/ssh-agent.env.fish"
+    else if test -d "$TMPDIR" -a -w "$TMPDIR"
+        echo "\$XDG_RUNTIME_DIR is not set to a writable directory, using \$TMPDIR for ssh-agent env file" >&2
+        set SSH_AGENT_ENV_FILE "$TMPDIR/ssh-agent-$USER.env.fish"
     else
-        echo "XDG_RUNTIME_DIR is not set to a writable directory, using /tmp for ssh-agent env file" >&2
-        set SSH_AGENT_ENV_FILE "/tmp/ssh-agent.env.fish"
+        echo "\$XDG_RUNTIME_DIR and \$TMPDIR are not set to writable directories, using /tmp for ssh-agent env file" >&2
+        set SSH_AGENT_ENV_FILE "/tmp/ssh-agent-$USER.env.fish"
     end
     
     # if SSH_AUTH_SOCK is already set and valid, we're done
