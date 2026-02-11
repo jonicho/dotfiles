@@ -11,3 +11,12 @@ else
     echo "eza not found, using ls instead"
     alias ll='LC_COLLATE=C ls -alF'
 end
+
+# Run fastfetch as greeting
+if type -q fastfetch
+    function fish_greeting
+        fastfetch
+    end
+else
+    echo "fastfetch not found, fish greeting not set"
+end
