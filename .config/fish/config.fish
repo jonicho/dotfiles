@@ -5,4 +5,9 @@ if status is-interactive
     init_ssh_agent
 end
 
-alias ll='LC_COLLATE=C ls -alF'
+if type -q eza
+    alias ll='eza -aalF -icons'
+else
+    echo "eza not found, using ls instead"
+    alias ll='LC_COLLATE=C ls -alF'
+end
