@@ -5,13 +5,6 @@ if status is-interactive
     init_ssh_agent
 end
 
-if type -q eza
-    alias ll='eza -aalF --icons=auto'
-else
-    echo "eza not found, using ls instead"
-    alias ll='LC_COLLATE=C ls -alF'
-end
-
 # Run fastfetch as greeting
 if type -q fastfetch
     function fish_greeting
@@ -20,3 +13,5 @@ if type -q fastfetch
 else
     echo "fastfetch not found, fish greeting not set"
 end
+
+alias ll='LC_COLLATE=C ls -alF'
