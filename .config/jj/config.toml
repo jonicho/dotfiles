@@ -8,3 +8,6 @@ email = "jonas.r.keller@gmail.com"
 editor = "vim"
 default-command = "log"
 diff-editor = ":builtin"
+
+[revsets]
+bookmark-advance-to = "@-"
