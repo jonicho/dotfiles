@@ -11,3 +11,6 @@ diff-editor = ":builtin"
 
 [revsets]
 bookmark-advance-to = "@-"
+
+[templates]
+draft_commit_description = "builtin_draft_commit_description_with_diff"
